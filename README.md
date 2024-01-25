@@ -1,1 +1,1 @@
-# linked-list
+January 25, 2024 - I am now beginning the linked list project as a part of The Odin Project's Javascript track. I will build a linked list data structure and several functions to use with the linked list for things like adding and removing nodes.
