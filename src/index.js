@@ -1,16 +1,7 @@
-// Node factory.
-function node() {
-    const nodeObj = {
-        value: null,
-        nextNode: null,
-    }
-    return nodeObj;
-}
+import linkedList from "./linked-list";
 
-// Linked list factory.
-function linkedList() {
-    const listObj = {
+const testList = linkedList();
 
-    }
-    return listObj;
-}
+testList.append();
+
+console.log(testList);
