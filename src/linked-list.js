@@ -1,14 +1,10 @@
 import node from "./list-node";
 
-// Linked list factory.
-function linkedList() {
-    const listObj = {
-        1: node(),
-        append: function append() {
-            this[Object.keys(this).length + 1] = node();
-        }
+// Linked list class. temporary. should change to factory func.
+class LinkedList {
+    constructor() {
+        this.head = null;
     }
-    return listObj;
 }
 
-export default linkedList;
+export default LinkedList;

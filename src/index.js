@@ -1,7 +1,5 @@
-import linkedList from "./linked-list";
+import LinkedList from "./linked-list";
 
-const testList = linkedList();
-
-testList.append();
+const testList = new LinkedList();
 
 console.log(testList);
