@@ -1,8 +1,16 @@
 // Node factory.
 function node() {
-    const obj = {
+    const nodeObj = {
         value: null,
         nextNode: null,
     }
-    return obj;
+    return nodeObj;
+}
+
+// Linked list factory.
+function linkedList() {
+    const listObj = {
+
+    }
+    return listObj;
 }

@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("// Node factory.\nfunction node() {\n    const obj = {\n        value: null,\n        nextNode: null,\n    }\n    return obj;\n}\n\n//# sourceURL=webpack://linked-list/./src/index.js?");
+eval("// Node factory.\nfunction node() {\n    const nodeObj = {\n        value: null,\n        nextNode: null,\n    }\n    return nodeObj;\n}\n\n// Linked list factory.\nfunction linkedList() {\n    const listObj = {\n\n    }\n    return listObj;\n}\n\n\n//# sourceURL=webpack://linked-list/./src/index.js?");
 
 /***/ })
 
