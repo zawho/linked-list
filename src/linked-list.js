@@ -1,9 +1,9 @@
 import node from "./list-node";
 
-// Linked list class. temporary. should change to factory func.
+// Linked list class. should change to factory func if possible.
 class LinkedList {
-    constructor() {
-        this.head = null;
+    constructor(head = null) {
+        this.head = head;
     }
 }
 

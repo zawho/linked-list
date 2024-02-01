@@ -1,8 +1,8 @@
 // Node factory.
-function node() {
+function node(value) {
     const nodeObj = {
-        value: null,
-        nextNode: null,
+        value,
+        next: null,
     }
     return nodeObj;
 }

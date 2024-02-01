@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _linked_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./linked-list */ \"./src/linked-list.js\");\n\n\nconst testList = new _linked_list__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\n\nconsole.log(testList);\n\n//# sourceURL=webpack://linked-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _list_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list-node */ \"./src/list-node.js\");\n/* harmony import */ var _linked_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./linked-list */ \"./src/linked-list.js\");\n\n\n\nconst node1 = (0,_list_node__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(1);\nconst node2 = (0,_list_node__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(2);\nconst node3 = (0,_list_node__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(3);\nnode1.next = node2;\nnode2.next = node3;\n\nconst testList = new _linked_list__WEBPACK_IMPORTED_MODULE_1__[\"default\"](node1);\n\nconsole.log(testList);\n\n//# sourceURL=webpack://linked-list/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lin
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _list_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list-node */ \"./src/list-node.js\");\n\n\n// Linked list class. temporary. should change to factory func.\nclass LinkedList {\n    constructor() {\n        this.head = null;\n    }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LinkedList);\n\n\n//# sourceURL=webpack://linked-list/./src/linked-list.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _list_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list-node */ \"./src/list-node.js\");\n\n\n// Linked list class. should change to factory func if possible.\nclass LinkedList {\n    constructor(head = null) {\n        this.head = head;\n    }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LinkedList);\n\n\n//# sourceURL=webpack://linked-list/./src/linked-list.js?");
 
 /***/ }),
 
@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Node factory.\nfunction node() {\n    const nodeObj = {\n        value: null,\n        nextNode: null,\n    }\n    return nodeObj;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (node);\n\n//# sourceURL=webpack://linked-list/./src/list-node.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Node factory.\nfunction node(value) {\n    const nodeObj = {\n        value,\n        next: null,\n    }\n    return nodeObj;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (node);\n\n//# sourceURL=webpack://linked-list/./src/list-node.js?");
 
 /***/ })
 
