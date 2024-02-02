@@ -1,9 +1,16 @@
 import node from "./list-node";
 
-// Linked list class. should change to factory func if possible.
+// Linked list class.
 class LinkedList {
-    constructor(head = null) {
-        this.head = head;
+    constructor() {
+        this.head = null;
+    }
+
+    prepend(data) {
+        const newNode = node(data);
+        newNode.next = this.head;
+        this.head = newNode;
+
     }
 }
 

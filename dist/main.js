@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _list_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list-node */ \"./src/list-node.js\");\n/* harmony import */ var _linked_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./linked-list */ \"./src/linked-list.js\");\n\n\n\nconst node1 = (0,_list_node__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(1);\nconst node2 = (0,_list_node__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(2);\nconst node3 = (0,_list_node__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(3);\nnode1.next = node2;\nnode2.next = node3;\n\nconst testList = new _linked_list__WEBPACK_IMPORTED_MODULE_1__[\"default\"](node1);\n\nconsole.log(testList);\n\n//# sourceURL=webpack://linked-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _list_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list-node */ \"./src/list-node.js\");\n/* harmony import */ var _linked_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./linked-list */ \"./src/linked-list.js\");\n\n\n\nconst testList = new _linked_list__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\ntestList.prepend(1);\n\nconsole.log(testList);\n\n//# sourceURL=webpack://linked-list/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lis
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _list_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list-node */ \"./src/list-node.js\");\n\n\n// Linked list class. should change to factory func if possible.\nclass LinkedList {\n    constructor(head = null) {\n        this.head = head;\n    }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LinkedList);\n\n\n//# sourceURL=webpack://linked-list/./src/linked-list.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _list_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list-node */ \"./src/list-node.js\");\n\n\n// Linked list class.\nclass LinkedList {\n    constructor() {\n        this.head = null;\n    }\n\n    prepend(data) {\n        const newNode = (0,_list_node__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(data);\n        newNode.next = this.head;\n        this.head = newNode;\n\n    }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LinkedList);\n\n\n//# sourceURL=webpack://linked-list/./src/linked-list.js?");
 
 /***/ }),
 
