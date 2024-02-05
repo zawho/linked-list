@@ -12,6 +12,18 @@ class LinkedList {
         this.head = newNode;
 
     }
+
+    size() {
+        let length = 0;
+        for (let i = this.head; i; i = i.next) {
+            length += 1;
+        }
+        if (length === 1) {
+            console.log(`This linked list has ${length} node.`);
+        } else {
+            console.log(`This linked list has ${length} nodes.`);
+        }
+    }
 }
 
 export default LinkedList;
