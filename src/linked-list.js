@@ -5,6 +5,20 @@ class LinkedList {
     constructor() {
         this.head = null;
     }
+    
+    append(data) {
+        const newNode = node(data);
+        if (this.head === null) {
+            this.head = newNode;
+            return;
+        }
+        for (let i = this.head; i; i = i.next) {
+            if (i.next === null) {
+                i.next = newNode;
+                return;
+            }
+        }
+    }
 
     prepend(data) {
         const newNode = node(data);
