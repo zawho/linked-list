@@ -41,6 +41,14 @@ class LinkedList {
     first() {
         console.log(this.head);
     }
+
+    last() {
+        for (let i = this.head; i; i = i.next) {
+            if (i.next === null){
+                console.log(i);
+            }
+        }
+    }
 }
 
 export default LinkedList;
