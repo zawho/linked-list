@@ -49,6 +49,24 @@ class LinkedList {
             }
         }
     }
+
+    at(index) {
+        let current;
+        for (let i = this.head; i; i = i.next) {
+            if (i === this.head) {
+                current = 0;
+            } else {
+                current += 1;
+            }
+            if (current === index) {
+                console.log(i);
+            }
+            if (i.next === null && index > current) {
+                console.log(`There is no node at index ${index}.`);
+            }
+        }
+    }
+
 }
 
 export default LinkedList;

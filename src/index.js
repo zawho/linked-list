@@ -7,5 +7,6 @@ testList.prepend(1);
 testList.size();
 testList.first();
 testList.last();
+testList.at(1);
 
 // console.log(testList);
