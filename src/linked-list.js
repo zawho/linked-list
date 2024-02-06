@@ -24,7 +24,6 @@ class LinkedList {
         const newNode = node(data);
         newNode.next = this.head;
         this.head = newNode;
-
     }
 
     size() {
@@ -37,6 +36,10 @@ class LinkedList {
         } else {
             console.log(`This linked list has ${length} nodes.`);
         }
+    }
+
+    first() {
+        console.log(this.head);
     }
 }
 
