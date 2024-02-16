@@ -67,6 +67,36 @@ class LinkedList {
         }
     }
 
+    pop() {
+        let current;
+        let nextToLast;
+        for (let i = this.head; i; i = i.next) {
+            if (i === this.head) {
+                current = 0;
+            } else {
+                current += 1;
+            }
+            if (i.next === null && i !== this.head) {
+                nextToLast = current - 1;
+            }
+            if (i === this.head && i.next === null) {
+                this.head = null;
+                nextToLast = 0;
+            }
+        }
+        for (let i = this.head; i; i = i.next) {
+            if (i === this.head) {
+                current = 0;
+            } else {
+                current += 1;
+            }
+            if (nextToLast > 0 && current === nextToLast) {
+                i.next = null;
+            }
+        }
+        console.log(this);
+    }
+
 }
 
 export default LinkedList;

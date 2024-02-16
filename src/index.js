@@ -8,5 +8,6 @@ testList.size();
 testList.first();
 testList.last();
 testList.at(1);
+// testList.pop();
 
 // console.log(testList);
