@@ -90,7 +90,7 @@ class LinkedList {
             } else {
                 current += 1;
             }
-            if (nextToLast > 0 && current === nextToLast) {
+            if (nextToLast >= 0 && current === nextToLast) {
                 i.next = null;
             }
         }
