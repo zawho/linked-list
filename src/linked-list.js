@@ -97,6 +97,17 @@ class LinkedList {
         console.log(this);
     }
 
+    contains(data) {
+        for (let i = this.head; i; i = i.next) {
+            if (i.value === data) {
+                console.log(i);
+                return true;
+            }
+        }
+        console.log(`This list does not contain "${data}".`);
+        return false;
+    }
+
 }
 
 export default LinkedList;
