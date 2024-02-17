@@ -9,6 +9,6 @@ testList.prepend(1);
 // testList.last();
 // testList.at(1);
 // testList.pop();
-testList.contains(2);
+// testList.contains(2);
 
 // console.log(testList);

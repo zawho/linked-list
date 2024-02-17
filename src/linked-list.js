@@ -36,18 +36,23 @@ class LinkedList {
         } else {
             console.log(`This linked list has ${length} nodes.`);
         }
+        return length;
     }
 
     first() {
         console.log(this.head);
+        return this.head;
     }
 
     last() {
+        let last;
         for (let i = this.head; i; i = i.next) {
-            if (i.next === null){
-                console.log(i);
+            if (i.next === null) {
+                last = i;
             }
         }
+        console.log(last);
+        return last;
     }
 
     at(index) {
@@ -60,11 +65,11 @@ class LinkedList {
             }
             if (current === index) {
                 console.log(i);
-            }
-            if (i.next === null && index > current) {
-                console.log(`There is no node at index ${index}.`);
+                return i;
             }
         }
+        console.log(`There is no node at index ${index}.`);
+        return null;
     }
 
     pop() {
