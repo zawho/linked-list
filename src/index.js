@@ -11,5 +11,6 @@ testList.prepend(1);
 // testList.pop();
 // testList.contains(2);
 // testList.find(2);
+// testList.toString();
 
 // console.log(testList);

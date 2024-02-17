@@ -130,6 +130,17 @@ class LinkedList {
         return null;
     }
 
+    toString() {
+        let string = '';
+        for (let i = this.head; i; i = i.next) {
+            if (i.next !== null) {
+                string += `( ${i.value} ) -> `;
+            } else {
+                string += `( ${i.value} ) -> null`;
+            }
+        }
+        console.log(string);
+    }
 }
 
 export default LinkedList;
