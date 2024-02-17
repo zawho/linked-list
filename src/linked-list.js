@@ -113,6 +113,23 @@ class LinkedList {
         return false;
     }
 
+    find(data) {
+        let index;
+        for (let i = this.head; i; i = i.next) {
+            if (i === this.head) {
+                index = 0;
+            } else {
+                index += 1;
+            }
+            if (i.value === data) {
+                console.log(index);
+                return index;
+            }
+        }
+        console.log(`This list does not contain "${data}".`);
+        return null;
+    }
+
 }
 
 export default LinkedList;
