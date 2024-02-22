@@ -141,6 +141,24 @@ class LinkedList {
         }
         console.log(string);
     }
+
+    // fix bugs, see written notes
+    insertAt(data, index) {
+        let current;
+        const newNode = node(data);
+        for (let i = this.head; i; i = i.next) {
+            if (i === this.head) {
+                current = 0;
+            } else {
+                current += 1;
+            }
+            if (current === index - 1) {
+                newNode.next = i.next;
+                i.next = newNode;
+            }
+        }
+        console.log(this);
+    }
 }
 
 export default LinkedList;
