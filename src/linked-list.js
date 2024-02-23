@@ -142,7 +142,6 @@ class LinkedList {
         console.log(string);
     }
 
-    // fix bugs, see written notes
     insertAt(data, index) {
         let current;
         const newNode = node(data);
@@ -152,12 +151,27 @@ class LinkedList {
             } else {
                 current += 1;
             }
+            if (index < 0) {
+                console.log ('The index cannot be a negative number.');
+                return;
+            }
+            if (index === 0) {
+                newNode.next = this.head;
+                this.head = newNode;
+                console.log(this);
+                return;
+            } 
+            if (i.next === null && index >= current) {
+                console.log (`There is no node at index ${index}.`);
+                return;
+            }
             if (current === index - 1) {
                 newNode.next = i.next;
                 i.next = newNode;
+                console.log(this);
+                return;
             }
         }
-        console.log(this);
     }
 }
 

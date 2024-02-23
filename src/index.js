@@ -14,6 +14,6 @@ testList.prepend(1);
 // testList.contains(2);
 // testList.find(2);
 // testList.toString();
-testList.insertAt('new', 2);
+// estList.insertAt('new', 2);
 
 // console.log(testList);
