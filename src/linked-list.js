@@ -173,6 +173,32 @@ class LinkedList {
             }
         }
     }
+
+    removeAt(index) {
+        let current;
+        let test;
+        for (let i = this.head; i; i = i.next) {
+            if (i === this.head) {
+                current = 0;
+            } else {
+                current += 1;
+            }
+            if (current === index) {
+                test = i.next;
+            }
+        }
+        for (let i = this.head; i; i = i.next) {
+            if (i === this.head) {
+                current = 0;
+            } else {
+                current += 1;
+            }
+            if (current === index - 1) {
+               i.next = test;
+            }
+        }
+        console.log(this);
+    }
 }
 
 export default LinkedList;
