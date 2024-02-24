@@ -176,7 +176,7 @@ class LinkedList {
 
     removeAt(index) {
         let current;
-        let test;
+        let currentNext;
         for (let i = this.head; i; i = i.next) {
             if (i === this.head) {
                 current = 0;
@@ -184,7 +184,7 @@ class LinkedList {
                 current += 1;
             }
             if (current === index) {
-                test = i.next;
+                currentNext = i.next;
             }
         }
         for (let i = this.head; i; i = i.next) {
@@ -193,11 +193,16 @@ class LinkedList {
             } else {
                 current += 1;
             }
+            if (i.next === null && index >= current) {
+                console.log (`There is no node at index ${index}.`);
+                return;
+            }
             if (current === index - 1) {
-               i.next = test;
+               i.next = currentNext;
+               console.log(this);
+               return;
             }
         }
-        console.log(this);
     }
 }
 

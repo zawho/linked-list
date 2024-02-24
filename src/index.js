@@ -15,6 +15,6 @@ testList.prepend(1);
 // testList.find(2);
 // testList.toString();
 // testList.insertAt('new', 2);
-testList.removeAt(2);
+testList.removeAt(3);
 
 // console.log(testList);
