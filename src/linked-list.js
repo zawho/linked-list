@@ -193,6 +193,15 @@ class LinkedList {
             } else {
                 current += 1;
             }
+            if (index < 0) {
+                console.log ('The index cannot be a negative number.');
+                return;
+            }
+            if (index === 0) {
+                this.head = currentNext;
+                console.log(this);
+                return;
+            }
             if (i.next === null && index >= current) {
                 console.log (`There is no node at index ${index}.`);
                 return;
