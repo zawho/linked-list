@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _linked_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./linked-list */ \"./src/linked-list.js\");\n\n\nconst testList = new _linked_list__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\ntestList.append(2);\ntestList.append(3);\ntestList.append(4);\ntestList.append(5);\ntestList.prepend(1);\n// testList.size();\n// testList.first();\n// testList.last();\n// testList.at(1);\n// testList.pop();\n// testList.contains(2);\n// testList.find(2);\n// testList.toString();\n// testList.insertAt('new', 2);\ntestList.removeAt(1);\n\n// console.log(testList);\n\n//# sourceURL=webpack://linked-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _linked_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./linked-list */ \"./src/linked-list.js\");\n\n\nconst testList = new _linked_list__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\ntestList.append(2);\ntestList.append(3);\ntestList.append(4);\ntestList.append(5);\ntestList.prepend(1);\ntestList.size();\ntestList.toString();\n// testList.first();\n// testList.last();\n// testList.at(1);\n// testList.pop();\n// testList.contains(2);\n// testList.find(2);\n// testList.insertAt('new', 2);\n// testList.removeAt(1);\n\n\n//# sourceURL=webpack://linked-list/./src/index.js?");
 
 /***/ }),
 
